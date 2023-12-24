@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function Result(props) {
-  const boxes = props.movies.map(() => {
-    return <Box />;
+  const boxes = props.movies.map((item, index) => {
+    return <Box key={index} />;
   });
   return <div className="w-full grid grid-cols-4 gap-3 ">{boxes}</div>;
 }
