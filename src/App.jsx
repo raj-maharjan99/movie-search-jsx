@@ -1,14 +1,32 @@
 import React, { useEffect, useState } from "react";
 import Result from "./Components/Result";
+import axios from "axios";
 
 function App() {
-  const [movies, setMovies] = useState([11, 1]);
+  const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
+  console.log(movies);
+  const APIURL =
+    "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1";
+
+  const getAllMovies = () => {
+    axios
+      .get(APIURL)
+      .then((response) => setMovies(response.data.results))
+      .catch((error) => console.log(error));
+  };
+
   useEffect(() => {
     console.log("hello  ");
+    if (search === "") {
+      getAllMovies();
+    } else {
+      // getSearchMovies();
+    }
   }, [search]);
+
   return (
-    <div className="max-w-[1200px] min-h-[400px] mx-auto shadow-xl p-3  ">
+    <div className="max-w-[1200px] bg-slate-600 min-h-[400px] mx-auto shadow-xl p-3  ">
       <input
         placeholder="search movie here"
         type="search"

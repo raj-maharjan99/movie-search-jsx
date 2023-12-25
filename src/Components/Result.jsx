@@ -1,20 +1,28 @@
-import React from "react";
+debugger;
 
 export default function Result(props) {
   const boxes = props.movies.map((item, index) => {
-    return <Box key={index} />;
+    return (
+      <Box
+        title={item.title}
+        rating={item.vote_average}
+        image={item.poster_path}
+        key={index}
+      />
+    );
   });
   return <div className="w-full grid grid-cols-4 gap-3 ">{boxes}</div>;
 }
 
-const Box = () => {
+const Box = (props) => {
+  const IMGPATH = "https://image.tmdb.org/t/p/w1280";
   return (
     <div className="shadow min-h-[200px] border border-black mt-3">
-      <img
-        className="w-ful"
-        src="https://i5.walmartimages.com/asr/9032725b-a21f-41ff-9a7b-ab9d39c86fc2.7b2569ebad4724826b7b71915becd10f.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
-        alt=""
-      />
+      <img className="w-full" src={IMGPATH + props.image} alt="" />
+      <div className="flex justify-between px-2 py-2">
+        <span className="text-white">{props.title}</span>{" "}
+        <span className="text-yellow-600">{props.rating}</span>
+      </div>
     </div>
   );
 };
