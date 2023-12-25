@@ -1,5 +1,3 @@
-debugger;
-
 export default function Result(props) {
   const boxes = props.movies.map((item, index) => {
     return (
@@ -11,7 +9,7 @@ export default function Result(props) {
       />
     );
   });
-  return <div className="w-full grid grid-cols-4 gap-3 ">{boxes}</div>;
+  return <div className="w-full grid md:grid-cols-4 gap-3 ">{boxes}</div>;
 }
 
 const Box = (props) => {
