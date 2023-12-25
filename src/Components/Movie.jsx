@@ -5,6 +5,8 @@ import axios from "axios";
 import Loading from "./Loading";
 import ImageCarousel from "./ImageCarousel";
 import Footer from "./Footer";
+import Carousel from "./Carousel";
+
 function Movie() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
@@ -43,7 +45,12 @@ function Movie() {
 
   return (
     <>
-      <div className="w-[1240px]  bg-slate-500  mx-auto shadow-xl p-3  ">
+      <div className="flex justify-around">
+        <Carousel />
+        <Carousel />
+        <Carousel />
+      </div>
+      <div className="w-[1240px]  bg-slate-500 mt-5  mx-auto shadow-xl p-3  ">
         <div className="flex justify-between py-2">
           {" "}
           <input
