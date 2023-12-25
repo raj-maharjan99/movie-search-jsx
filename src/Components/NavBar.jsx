@@ -8,14 +8,16 @@ function NavBar() {
       <div className="logo border border-spacing-2">
         <img className="w-20 sm:w-24" src={logo} alt="" />
       </div>
-      <div className="header font-[600] py-3 flex  justify-center gap-5">
-        <div className="title">Home</div>
-        <div className="title">Contact</div>
-        <div className="title">Bollywood</div>
-        <div className="title">Hollywood</div>
-        <div className="title">Nepali Movie</div>
-        <div className="title">More</div>
-      </div>
+      <ul className="header font-[600] py-3 flex   gap-5">
+        <li className="title">
+          <a href="">Home</a>
+        </li>
+        <li className="title">Contact</li>
+        <li className="title">Bollywood</li>
+        <li className="title">Hollywood</li>
+        <li className="title">Nepali Movie</li>
+        <li className="title">More</li>
+      </ul>
       <div className="box flex gap-2 px-3 py-3">
         <button className="border py-1 px-2">Login</button>
         <button className="border px-2">Sign Up</button>

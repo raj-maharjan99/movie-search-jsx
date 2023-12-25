@@ -2,7 +2,7 @@ import React from "react";
 
 function ImageCarousel() {
   return (
-    <div className="">
+    <div className="mb-3">
       <div className="sm:d-hidden  flex justify-center gap-2  w-full">
         <div className=" max-w-[80px] max-h-[60px]">
           <img

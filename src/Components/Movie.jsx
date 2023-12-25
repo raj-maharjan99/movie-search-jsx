@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Result from "./Result";
 import axios from "axios";
-import "../App.css";
+
 import Loading from "./Loading";
 import ImageCarousel from "./ImageCarousel";
+import Footer from "./Footer";
 function Movie() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState("");
@@ -41,27 +42,29 @@ function Movie() {
   }, [search]);
 
   return (
-    <div className="max-w-[1200px] bg-slate-600 min-h-[400px] mx-auto shadow-xl p-3  ">
-      <div className="flex justify-between py-2">
-        {" "}
-        <input
-          value={search}
-          onChange={changeTheSearch}
-          placeholder="search movie here"
-          type="search"
-          className="w-50 border border-black rounded text-slate-500 py-3 px-3  "
-        />
-        <ImageCarousel />
-      </div>
-      <div></div>
-      {movies.length === 0 ? (
-        <div className="  text-white font-[40px] text-center py-5">
-          <h1>Loading........</h1>
+    <>
+      <div className="w-[1240px]  bg-slate-500  mx-auto shadow-xl p-3  ">
+        <div className="flex justify-between py-2">
+          {" "}
+          <input
+            value={search}
+            onChange={changeTheSearch}
+            placeholder="search movie here"
+            type="search"
+            className="w-50 border border-black rounded text-slate-500 py-3 px-3  "
+          />
+          <ImageCarousel />
         </div>
-      ) : (
-        <Result movies={movies} />
-      )}
-    </div>
+
+        {movies.length === 0 ? (
+          <div className="  text-white font-[40px] text-center py-5">
+            <h1>Loading........</h1>
+          </div>
+        ) : (
+          <Result movies={movies} />
+        )}
+      </div>
+    </>
   );
 }
 
