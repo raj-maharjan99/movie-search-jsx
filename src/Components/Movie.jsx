@@ -45,12 +45,13 @@ function Movie() {
 
   return (
     <>
-      <div className="flex justify-around">
+      {/* data-bs-ride="carousel" autoplay  */}
+      <div className="flex justify-around mb-[50px]">
         <Carousel />
         <Carousel />
         <Carousel />
       </div>
-      <div className="w-[1240px]  bg-slate-500 mt-5  mx-auto shadow-xl p-3  ">
+      <div className="w-[1280px]  bg-slate-500 m-[50px]   mx-auto shadow-xl p-3  ">
         <div className="flex justify-between py-2">
           {" "}
           <input
