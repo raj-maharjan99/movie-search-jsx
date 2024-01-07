@@ -47,7 +47,7 @@ function signUp() {
           className="border border-black"
         />
         <button className="border" onClick={loginSubmit}>
-          Sign Up
+          Sign
         </button>
       </div>
     </div>

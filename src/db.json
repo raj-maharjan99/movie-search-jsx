@@ -11,19 +11,8 @@
       "id": 2
     },
     {
-      "email": "rjuallone@gmail.com",
-      "password": "hi",
-      "id": 3
-    },
-    {
       "email": "abc@gmail.com",
-      "password": "1234565",
-      "id": 4
-    },
-    {
-      "email": "aaaa11",
-      "password": "1111",
-      "id": 5
+      "password": "xyz"
     }
   ]
 }

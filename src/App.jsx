@@ -12,7 +12,8 @@ function App() {
   return (
     <>
       <NavBar />
-      <Switch>
+      <Movie />
+      {/* <Switch>
         <Route exact path="/">
           <Login />
         </Route>
@@ -25,7 +26,7 @@ function App() {
         <Route path="/home">
           <Movie />
         </Route>
-      </Switch>
+      </Switch> */}
       <Footer />
     </>
   );

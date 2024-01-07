@@ -33,7 +33,7 @@ function Carousel() {
         <div className="carousel-inner ">
           <div className="carousel-item active">
             <img
-              src="https://images.smiletemplates.com/uploads/screenshots/3/0000003334/powerpoint-templates-b450.jpg"
+              src="https://myhotposters.com/cdn/shop/products/mNS0678_1024x1024.jpg?v=1571444655"
               className="  "
               alt="..."
             />
@@ -46,7 +46,7 @@ function Carousel() {
           </div>
           <div className="carousel-item">
             <img
-              src="https://images.smiletemplates.com/uploads/screenshots/3/0000003332/powerpoint-templates-b450.jpg"
+              src="https://wallpapercave.com/wp/wp8807385.jpg"
               className=" "
               alt="..."
             />
@@ -59,7 +59,7 @@ function Carousel() {
           </div>
           <div className="carousel-item">
             <img
-              src="https://images.smiletemplates.com/uploads/screenshots/26/0000026815/powerpoint-templates-b450.jpg"
+              src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/o/f/3/medium-movie-poster-classic-collection-of-hindi-film-posters-original-imaghhvfxyprsw2b.jpeg?q=20"
               className=""
               alt="..."
             />

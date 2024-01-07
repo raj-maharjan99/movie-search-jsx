@@ -21,7 +21,7 @@ function Login() {
       if (user) {
         history.push("/home");
       } else {
-        console.log("not success");
+        alert("not success");
       }
     } catch (err) {
       console.log(err);
